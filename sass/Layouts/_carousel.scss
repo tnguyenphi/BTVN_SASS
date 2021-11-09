@@ -1,0 +1,22 @@
+#webCarousel{
+    // .webCarousel__bg{
+    // background-image: url(../../img/yellow_top_wave_01.png);
+    // background-repeat: no-repeat;
+    // background-position: contain;
+    // background-size: 100%;
+    // position: relative;
+    // top: -100px;
+    // z-index: -5;
+    // height: 300px;
+    // }
+    .webCarousel__content{
+        position: relative; 
+        top: -350px;
+        h3 {
+            @include styleText($color-1,$fs-2,$fw-2);
+        }
+        h1{
+            @include styleText($color-black-1,$fs-9,$fw-3)
+        }
+    }
+}

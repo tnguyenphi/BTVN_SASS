@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.btnHeader {
+  padding: 8px 25px;
+  background: #b61984;
+  border: noone;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btnHeader:hover {
+  background: #fff;
+  color: #181818;
+  border: solid 0.5px #b61984;
+}
+
+#headerWeb {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#headerWeb .navbar-nav {
+  color: #181818;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 150px;
+}
+
+#headerWeb .nav-item {
+  margin-left: 20px;
+}
+
+#headerWeb .nav-item .nav-link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 100%;
+  display: block;
+  background-color: #b61984;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#headerWeb .nav-item .nav-link:hover::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#headerWeb .nav-item.active .nav-link::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#headerWeb .menuHeader .menuHeader__phone {
+  margin-top: -20px;
+}
+
+#headerWeb .menuHeader .menuHeader__icon {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+#headerWeb .menuHeader .fab {
+  color: #181818;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+#headerWeb .menuHeader .fab:hover {
+  color: #b61984;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#headerWeb .headerWeb__img1 {
+  position: relative;
+  top: -100px;
+  z-index: -5;
+}
+
+#headerWeb .headerWeb__img2 {
+  position: relative;
+  top: 200px;
+  z-index: -5;
+}
+
+#headerWeb .headerWeb__img2 img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#webCarousel .webCarousel__content {
+  position: relative;
+  top: -350px;
+}
+
+#webCarousel .webCarousel__content h3 {
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#webCarousel .webCarousel__content h1 {
+  color: #181818;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.webCard {
+  overflow: hidden;
+  background-image: url(../../img/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-position: -100px;
+  background-size: 800%;
+  position: relative;
+  top: -350px;
+  height: 750px;
+}
+
+.webCard .card {
+  border-radius: 10px;
+  height: 350px;
+  width: 250px;
+  z-index: 100;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.webCard .card h5 {
+  color: #b61984;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.webCard .card h3 {
+  color: #181818;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.webCard .card p {
+  color: #181818;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.webCard .card:hover {
+  -webkit-box-shadow: 0 0px 20px 0px;
+          box-shadow: 0 0px 20px 0px;
+}
+
+.webCard .webCard__img2 {
+  position: relative;
+  top: -400px;
+  left: -200px;
+}
+
+.webCard .webCard__img2 .img-fluid {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  z-index: 0;
+}
+/*# sourceMappingURL=main.css.map */

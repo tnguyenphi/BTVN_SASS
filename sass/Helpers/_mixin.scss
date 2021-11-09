@@ -1,0 +1,36 @@
+// tạo biến styleText
+
+@mixin styleText($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin  styleButton($pd-y,$pd-x,$bg-color,$border,$radius) {
+    padding: $pd-y $pd-x;
+    background: $bg-color ;
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin styleButtonHover($bg-color,$color,$boder){
+    background: $bg-color;
+    color: $color;
+    border: $boder;
+}
+
+// $screen: tên màn hình cần lấy kích thước
+@mixin mediaQuery ($screen){
+    //kiểm tra màn hình có tồn tại trong $breakpoints hya ko
+    @if(map-has-key($map:$breakpoints,$key:$screen)){
+        //tìm thấy
+        //lấy giá trị dựa vào key(tên màn hình)
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Screen doesn't exist";
+    }
+}
