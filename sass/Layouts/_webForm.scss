@@ -3,7 +3,7 @@
     @include styleBackgroundImage(center, contain, 710px);
     background-repeat: no-repeat;
     background-position-y: 170px;
-    margin-top: -250px;
+    margin-top: 50px;
     .register__content {
         margin-left: $mg-7;
         margin-right: $mg-4;
@@ -83,14 +83,14 @@
 }
 @include mediaQuery ("large"){
     margin-top: 0px;
-    z-index: 100000;
+
 }
 
 @include mediaQuery ("medium"){
     margin-top: 150px;
-    z-index: 100000;
+
 }
 @include mediaQuery ("small"){
     margin-top: 200px;
-    z-index: 100000;
+
 }

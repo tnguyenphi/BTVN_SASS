@@ -95,7 +95,7 @@ html, body {
 
 #headerWeb .headerWeb__img1 {
   position: relative;
-  top: -100px;
+  top: -130px;
   z-index: -5;
 }
 
@@ -111,7 +111,7 @@ html, body {
 }
 
 #webCarousel .webCarousel__content {
-  height: 550px;
+  height: 200px;
   position: relative;
   top: -400px;
 }
@@ -197,8 +197,6 @@ html, body {
   background-repeat: no-repeat;
   background-position: -100px;
   background-size: 800%;
-  position: relative;
-  top: -350px;
   height: 750px;
 }
 
@@ -280,7 +278,7 @@ html, body {
   height: 710px;
   background-repeat: no-repeat;
   background-position-y: 170px;
-  margin-top: -250px;
+  margin-top: 50px;
 }
 
 .webForm .register__content {
@@ -399,17 +397,14 @@ html, body {
 
 @media screen and (max-width: 992px) {
   margin-top: 0px;
-  z-index: 100000;
 }
 
 @media screen and (max-width: 768px) {
   margin-top: 150px;
-  z-index: 100000;
 }
 
 @media screen and (max-width: 576px) {
   margin-top: 200px;
-  z-index: 100000;
 }
 
 footer {
