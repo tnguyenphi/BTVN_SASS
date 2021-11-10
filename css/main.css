@@ -7,7 +7,7 @@
 
 html, body {
   font-family: "Roboto",Arial,Helvetica,sans-serif;
-  color: #181818;
+  color: black;
   font-size: 14px;
   font-weight: 400;
 }
@@ -110,13 +110,10 @@ html, body {
           transform: scale(1);
 }
 
-#webCarousel {
-  z-index: 1000;
-}
-
 #webCarousel .webCarousel__content {
+  height: 550px;
   position: relative;
-  top: -350px;
+  top: -400px;
 }
 
 #webCarousel .webCarousel__content h3 {
@@ -134,6 +131,7 @@ html, body {
 @media screen and (max-width: 1200px) {
   .webCarousel__content {
     height: 195px;
+    top: -350px;
   }
   .webCarousel__content .row {
     margin-left: 0;
@@ -153,6 +151,7 @@ html, body {
   .webCarousel__content {
     margin-top: 57%;
     height: 195px;
+    top: -500px;
   }
   .webCarousel__content .row {
     margin-left: 10px;
@@ -172,8 +171,8 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .webCarousel__content {
-    margin-top: 77%;
     height: 195px;
+    top: -500px;
   }
   .webCarousel__content .row .image img {
     margin-left: 105px;
@@ -183,7 +182,7 @@ html, body {
 
 @media screen and (max-width: 576px) {
   .webCarousel__content {
-    margin-top: 90%;
+    top: -500px;
     height: 195px;
   }
   .webCarousel__content .row .text h3 {
@@ -248,6 +247,30 @@ html, body {
   -webkit-transform: scale(1.8);
           transform: scale(1.8);
   z-index: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .webCard {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .webCard {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .webCard {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .webCard {
+    overflow: visible;
+  }
 }
 
 .webForm {
@@ -368,6 +391,27 @@ html, body {
   background-size: 100% 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  margin-top: 0px;
+  z-index: 100000;
+}
+
+@media screen and (max-width: 768px) {
+  margin-top: 150px;
+  z-index: 100000;
+}
+
+@media screen and (max-width: 576px) {
+  margin-top: 200px;
+  z-index: 100000;
+}
+
 footer {
   overflow: hidden;
   background-image: url(../img/footer_background.jpg);
@@ -375,8 +419,8 @@ footer {
   background-size: cover;
   height: 520px;
   padding-top: 25px;
+  margin-top: -165px;
   position: relative;
-  top: -162px;
 }
 
 footer .footer__content {
@@ -493,5 +537,23 @@ footer .footer__content .footer__subscribe button {
 footer .footer__content .footer__subscribe button:hover {
   color: #fff;
   background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    margin-top: -165px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */

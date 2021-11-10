@@ -1,8 +1,8 @@
 #webCarousel{
-    z-index: 1000;
     .webCarousel__content{
+        height: 550px;
         position: relative; 
-        top: -350px;
+        top: -400px;
         h3 {
             @include styleText($color-1,$fs-2,$fw-2);
         }
@@ -15,6 +15,7 @@
 @include mediaQuery ("extra-large"){
     .webCarousel__content{
         height: 195px;
+        top: -350px;
         .row{
             margin-left: 0;
             .text{
@@ -35,6 +36,7 @@
     .webCarousel__content{
         margin-top: 57%;
         height: 195px;
+        top: -500px;
         .row{
             margin-left: $mg-14 + 4px;
             .text{
@@ -57,8 +59,8 @@
 }
 @include mediaQuery ("medium"){
     .webCarousel__content{
-        margin-top: 77%;
         height: 195px;
+        top: -500px;
         .row{
             .image{
                 img{
@@ -71,7 +73,7 @@
 }
 @include mediaQuery ("small"){
     .webCarousel__content{
-        margin-top: 90%;
+        top: -500px;
         height: 195px;
         .row{
             .text{

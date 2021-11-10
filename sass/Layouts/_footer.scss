@@ -3,8 +3,8 @@ footer {
     background-image: url(../img/footer_background.jpg);
     @include styleBackgroundImage(bottom, cover, 520px);
     padding-top: $pd-9;
+    margin-top: -165px;
     position: relative;
-    top: -162px;
     .footer__content {
         margin-top: 50px;
         h4 {
@@ -96,3 +96,18 @@ footer {
     }
 }
 
+@include mediaQuery ("extra-large"){
+    footer{
+        margin-top: -165px;
+    }
+}
+@include mediaQuery ("large"){
+    margin-top: 0px;
+}
+
+@include mediaQuery ("medium"){
+    margin-top: 50px;
+}
+@include mediaQuery ("small"){
+    margin-top: 100px;
+}

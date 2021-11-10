@@ -49,3 +49,26 @@
         }
     }
 }
+
+@include mediaQuery ("extra-large"){
+    .webCard{
+        overflow: hidden;
+    }
+}
+@include mediaQuery ("large"){
+    .webCard{
+        overflow: visible;
+    }
+}
+
+@include mediaQuery ("medium"){
+    .webCard{
+        overflow: visible;
+    }
+}
+
+@include mediaQuery ("small"){
+    .webCard{
+        overflow: visible;
+    }
+}

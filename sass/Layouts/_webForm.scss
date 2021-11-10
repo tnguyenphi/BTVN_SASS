@@ -76,3 +76,21 @@
         }
     }
 }
+@include mediaQuery ("extra-large"){
+    footer{
+        margin-top: -250px;
+    }
+}
+@include mediaQuery ("large"){
+    margin-top: 0px;
+    z-index: 100000;
+}
+
+@include mediaQuery ("medium"){
+    margin-top: 150px;
+    z-index: 100000;
+}
+@include mediaQuery ("small"){
+    margin-top: 200px;
+    z-index: 100000;
+}
