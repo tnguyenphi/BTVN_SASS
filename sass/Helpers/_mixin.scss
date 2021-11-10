@@ -19,18 +19,27 @@
     border: $boder;
 }
 
-// $screen: tên màn hình cần lấy kích thước
-@mixin mediaQuery ($screen){
-    //kiểm tra màn hình có tồn tại trong $breakpoints hya ko
-    @if(map-has-key($map:$breakpoints,$key:$screen)){
-        //tìm thấy
-        //lấy giá trị dựa vào key(tên màn hình)
-        $value: map-get($map:$breakpoints, $key:$screen);
-        @media screen and (max-width:$value) {
-            @content;
-        }
-    }
-    @else {
-        @warn "Screen doesn't exist";
-    }
+@mixin styleTitle($color, $fs, $fw){
+    font-family: 'Montserrat', sans-serif;
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
 }
+
+@mixin styleBackgroundImage($bg-position, $bg-size, $height){
+    background-position: $bg-position;
+    background-size: $bg-size;
+    height: $height;
+}
+
+@mixin mediaQuery($screen){
+     @if(map-has-key($map: $breakpoints, $key: $screen)){
+         $value: map-get($map: $breakpoints, $key: $screen);
+         @media screen and (max-width: $value){
+             @content;
+         }
+     }
+     @else{
+         @warn "Screen does not exist"
+     }
+ }
