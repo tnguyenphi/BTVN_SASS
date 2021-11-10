@@ -3,7 +3,7 @@ footer {
     background-image: url(../img/footer_background.jpg);
     @include styleBackgroundImage(bottom, cover, 520px);
     padding-top: $pd-9;
-    margin-top: -165px;
+    margin-top: -200px;
     position: relative;
     .footer__content {
         margin-top: 50px;

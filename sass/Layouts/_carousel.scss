@@ -2,7 +2,7 @@
     .webCarousel__content{
         height: 200px;
         position: relative; 
-        top: -400px;
+        top: -200px;
         h3 {
             @include styleText($color-1,$fs-2,$fw-2);
         }
@@ -10,12 +10,17 @@
             @include styleText($color-black-1,$fs-9,$fw-3)
         }
     }
+    .headerWeb__img2{
+        position: relative;
+        z-index: -5;
+        img{
+            transform: scale(1);
+        }
+    }
 }
 
 @include mediaQuery ("extra-large"){
     .webCarousel__content{
-        height: 195px;
-        top: -350px;
         .row{
             margin-left: 0;
             .text{
@@ -34,9 +39,9 @@
 }
 @include mediaQuery ("large"){
     .webCarousel__content{
-        margin-top: 57%;
+        margin-top: 30%;
+        margin-bottom: 30%;
         height: 195px;
-        top: -500px;
         .row{
             margin-left: $mg-14 + 4px;
             .text{
@@ -60,7 +65,6 @@
 @include mediaQuery ("medium"){
     .webCarousel__content{
         height: 195px;
-        top: -500px;
         .row{
             .image{
                 img{
@@ -73,8 +77,6 @@
 }
 @include mediaQuery ("small"){
     .webCarousel__content{
-        top: -500px;
-        height: 195px;
         .row{
             .text{
                 h3{

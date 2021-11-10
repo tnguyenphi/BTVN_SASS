@@ -1,6 +1,6 @@
 #headerWeb {
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100%;
     z-index: 100;
     .navbar-nav {
@@ -53,15 +53,15 @@
 
     .headerWeb__img1{
         position: relative;
-        top: -130px;
+       top: -130px;
         z-index: -5;
     }
-    .headerWeb__img2{
-        position: relative;
-        top: 200px;
-        z-index: -5;
-        img{
-            transform: scale(1);
-        }
-    }
+    // .headerWeb__img2{
+    //     position: relative;
+    //     top: 200px;
+    //     z-index: -5;
+    //     img{
+    //         transform: scale(1);
+    //     }
+    // }
 }

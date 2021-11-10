@@ -59,17 +59,21 @@
 @include mediaQuery ("large"){
     .webCard{
         overflow: visible;
+        // margin-top: 50%;
+        margin-bottom: 120%;
     }
 }
 
 @include mediaQuery ("medium"){
     .webCard{
         overflow: visible;
+        margin-bottom: 150%;
     }
 }
 
 @include mediaQuery ("small"){
     .webCard{
         overflow: visible;
+        margin-bottom: 170%;
     }
 }

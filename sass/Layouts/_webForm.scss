@@ -1,8 +1,8 @@
 .webForm {
-    background-image: url(../img/accent_bottom_wave_01.png);
-    @include styleBackgroundImage(center, contain, 710px);
-    background-repeat: no-repeat;
-    background-position-y: 170px;
+    // background-image: url(../img/accent_bottom_wave_01.png);
+    // @include styleBackgroundImage(center, contain, 710px);
+    // background-repeat: no-repeat;
+    // background-position-y: 170px;
     margin-top: 50px;
     .register__content {
         margin-left: $mg-7;
@@ -75,22 +75,84 @@
             }
         }
     }
+    .webForm__img{
+        position: relative;
+        bottom: 200px;
+        z-index: -5;
+    }
 }
 @include mediaQuery ("extra-large"){
-    footer{
-        margin-top: -250px;
+    .webForm{
+        overflow: hidden;
+        margin-top: 10%;
+        margin-bottom: -20%;
+        margin-left: -20%;
     }
 }
 @include mediaQuery ("large"){
-    margin-top: 0px;
-
+    .webForm{
+        margin-top: 10%;
+        margin-bottom: -26%;
+        margin-left: 0%;
+        overflow: hidden;
+        .register__content{   
+            
+            img{
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .register__item{
+            width: 99%;
+            h1{
+                padding-top: $pd-10 - 2px;
+            }
+        }
+        .webForm__img{
+        
+        }
+    }
 }
 
 @include mediaQuery ("medium"){
-    margin-top: 150px;
+    .webForm{
+        margin-top: -30%;
+        margin-bottom: -28%;
+        margin-left: -20%;    
+        overflow: hidden;
+        .register__content{
+            img{
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .register__item{
+            width: 99%;
+            h1{
+                padding-top: $pd-10 - 2px;
+            }
+        }
+    }
 
 }
 @include mediaQuery ("small"){
-    margin-top: 200px;
+    .webForm{
+        margin-top: 50%;
+        margin-bottom: 0%;
+        margin-left: -40%;
+        overflow: hidden;
+        .register__content{
+            img{
+                width: 70%;
+                height: 70%;
+            }
+        }
+        .register__item{
+            width: 99%;
+            h1{
+                padding-top: $pd-10 - 2px;
+            }
+        }
+    }
 
 }
