@@ -110,6 +110,10 @@ html, body {
           transform: scale(1);
 }
 
+#webCarousel {
+  z-index: 1000;
+}
+
 #webCarousel .webCarousel__content {
   position: relative;
   top: -350px;
@@ -127,9 +131,70 @@ html, body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1200px) {
+  .webCarousel__content {
+    height: 195px;
+  }
+  .webCarousel__content .row {
+    margin-left: 0;
+  }
+  .webCarousel__content .row .text {
+    text-align: left;
+  }
+  .webCarousel__content .row .text h3 {
+    font-size: 35px;
+  }
+  .webCarousel__content .row .image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .webCarousel__content {
+    margin-top: 57%;
+    height: 195px;
+  }
+  .webCarousel__content .row {
+    margin-left: 10px;
+  }
+  .webCarousel__content .row .text h1 {
+    margin-top: 10px;
+  }
+  .webCarousel__content .row .text h3 {
+    font-size: 25px;
+  }
+  .webCarousel__content .row .image img {
+    margin-left: 105px;
+    margin-top: 70px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .webCarousel__content {
+    margin-top: 77%;
+    height: 195px;
+  }
+  .webCarousel__content .row .image img {
+    margin-left: 105px;
+    margin-top: 105px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .webCarousel__content {
+    margin-top: 90%;
+    height: 195px;
+  }
+  .webCarousel__content .row .text h3 {
+    font-size: 20px;
+    width: 95%;
+  }
+}
+
 .webCard {
   overflow: hidden;
-  background-image: url(../../img/Violet_top_left_wave.png);
+  background-image: url(../img/Violet_top_left_wave.png);
   background-repeat: no-repeat;
   background-position: -100px;
   background-size: 800%;
@@ -186,7 +251,7 @@ html, body {
 }
 
 .webForm {
-  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-image: url(../img/accent_bottom_wave_01.png);
   background-position: center;
   background-size: contain;
   height: 710px;
@@ -305,7 +370,7 @@ html, body {
 
 footer {
   overflow: hidden;
-  background-image: url(../../img/footer_background.jpg);
+  background-image: url(../img/footer_background.jpg);
   background-position: bottom;
   background-size: cover;
   height: 520px;

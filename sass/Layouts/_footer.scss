@@ -1,6 +1,6 @@
 footer {
     overflow: hidden;
-    background-image: url(../../img/footer_background.jpg);
+    background-image: url(../img/footer_background.jpg);
     @include styleBackgroundImage(bottom, cover, 520px);
     padding-top: $pd-9;
     position: relative;
@@ -95,3 +95,4 @@ footer {
         }
     }
 }
+
